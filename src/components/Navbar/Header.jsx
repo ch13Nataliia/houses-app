@@ -5,10 +5,11 @@ import { GiSpookyHouse } from "react-icons/gi";
 
 
 const Menu = [
-  { id: 1, name: 'About', link: '/aboutus' },
-  { id: 2, name: 'Properties', link: '/properties' },
-  { id: 3, name: 'Team', link: '/team' },
-  { id: 4, name: 'Contact', link: '/contact' },
+  { id: 1, name: 'Home', link: '/home' },
+  { id: 2, name: 'About', link: '/aboutus' },
+  { id: 3, name: 'Properties', link: '/properties' },
+  { id: 4, name: 'Team', link: '/team' },
+  { id: 5, name: 'Contact', link: '/contact' },
 ];
 const DropLinks = [
   { id: 1, name: 'Houses', link: '/houses' },
@@ -21,7 +22,7 @@ function Header() {
       <div className="shadow-md bg-orange-200/30 ">
         <div className="container py-3 sm:py-0 flex flex-row justify-between">
           <div className="flex items-center justify-between">
-            <a href="#"><GiSpookyHouse  className="text-4xl"/>
+            <a href='#'><GiSpookyHouse  className="text-4xl"/>
 </a>
           </div>
           {/* menucsection */}
