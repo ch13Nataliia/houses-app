@@ -7,6 +7,7 @@ import Img5 from '../assets/housesImg/fiveHouse1.webp';
 import Img6 from '../assets/housesImg/sixHouse1.webp';
 
 function Properties() {
+
   const ServisesData = [
     {
       id: 1,
@@ -57,6 +58,8 @@ function Properties() {
       img: Img6,
     },
   ];
+
+  
   return (
     <>
       <div className="py-10">
@@ -75,19 +78,19 @@ function Properties() {
               alias nisi ea deleniti?
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 sm:gap-16 md:grid-cols-3 md:gap-5 place-items-center">
+          <div className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
             {ServisesData.map((data) => (
               <>
-                <div className="rounded-2xl bg-white shadow-md hover:bg-orange-100/50 relative group max-w-[400px] border-[1px] p-4">
-                  <div className="h-[250px]">
-                    <img src={data.img} alt="" />
+                <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  ">
+                  <div className="h-[250px] " >
+                    <img src={data.img} alt="photos" />
                   </div>
-                  <div className="p-4 text-center">
-                    <h2>{data.title}</h2>
+                  <div className=" text-center p-4 ">
+                    <h2 className='text-2xl font-bold uppercase'>{data.title}</h2>
                     <p>{data.description}</p>
                     <button
                       onClick={() => {}}
-                      className="bg-orange-300/50 p-2 rounded-xl duration-200 hover:scale-105 m-4"
+                      className="bg-orange-200/50 p-2 rounded-xl duration-200 hover:scale-105 m-4"
                     >
                       Book Now
                     </button>

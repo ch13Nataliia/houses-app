@@ -19,7 +19,7 @@ const DropLinks = [
 function Header() {
   return (
     <>
-      <div className="shadow-md bg-orange-200/30 ">
+      <div className="shadow-md bg-orange-50 ">
         <div className="container py-3 sm:py-0 flex flex-row justify-between">
           <div className="flex items-center justify-between">
             <a href='#'><GiSpookyHouse  className="text-4xl"/>
