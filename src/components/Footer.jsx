@@ -25,7 +25,7 @@ function Footer() {
             {/* company details */}
             <div className="py-8 px-4">
               <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-                Houses App
+                <GiSpookyHouse />
               </h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A

@@ -10,10 +10,10 @@ function AboutUs() {
         <BannerTwo />
       </div>
       <div className='text-center  mx-auto'>
-        <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-orange-800 to-orange-200 p-8 ">
+        <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-orange-800 to-orange-200 p-4 ">
           Info About Our Company
         </h1>
-        <div className="container grid grid-cols-1 md:grid-cols-2 my-4 justify-between gap-2">
+        <div className="container grid grid-cols-1 md:grid-cols-2 my-2 justify-between gap-2">
           <div className='opacity-70'>
             <img src={Img1} alt="" className='rounded-md' />
           </div>

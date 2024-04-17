@@ -6,8 +6,16 @@ import Img4 from '../assets/housesImg/FoursHouse1.webp';
 import Img5 from '../assets/housesImg/fiveHouse1.webp';
 import Img6 from '../assets/housesImg/sixHouse1.webp';
 
-function Properties() {
+import BannerProp from '../assets/2.png';
 
+const bgImage = {
+  backgroundImage: `url(${BannerProp})`,
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  width: '100%',
+};
+function Properties() {
   const ServisesData = [
     {
       id: 1,
@@ -59,9 +67,10 @@ function Properties() {
     },
   ];
 
-  
+
   return (
     <>
+    <div style={bgImage}><img src={BannerProp} alt="" /></div>
       <div className="py-10">
         <div className="container">
           {/* header */}
@@ -82,11 +91,13 @@ function Properties() {
             {ServisesData.map((data) => (
               <>
                 <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  ">
-                  <div className="h-[250px] " >
+                  <div className="h-[250px] ">
                     <img src={data.img} alt="photos" />
                   </div>
                   <div className=" text-center p-4 ">
-                    <h2 className='text-2xl font-bold uppercase'>{data.title}</h2>
+                    <h2 className="text-2xl font-bold uppercase">
+                      {data.title}
+                    </h2>
                     <p>{data.description}</p>
                     <button
                       onClick={() => {}}
