@@ -91,7 +91,7 @@ function Properties() {
             {ServisesData.map((data) => (
               <>
                 <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  ">
-                  <div className="h-[250px] ">
+                  <div className="h-[250px]">
                     <img src={data.img} alt="photos" />
                   </div>
                   <div className=" text-center p-4 ">
