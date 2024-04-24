@@ -3,8 +3,8 @@ import { FaCaretDown } from 'react-icons/fa';
 import { GiSpookyHouse } from 'react-icons/gi';
 
 const Menu = [
-  { id: 1, name: 'About', link: '/aboutus' },
-  { id: 2, name: 'Properties', link: '/properties' },
+  {id: 1, name: 'Home', link: '/'},
+  { id: 2, name: 'About', link: '/aboutus' },
   { id: 3, name: 'Team', link: '/team' },
   { id: 4, name: 'Contact', link: '/contact' },
 ];

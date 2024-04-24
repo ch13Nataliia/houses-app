@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import Houses from './pages/Houses';
 import Apartments from './pages/Apartments';
 import Rooms from './pages/Rooms';
+import Home from './pages/Home';
 
 
 
@@ -17,13 +18,14 @@ function App() {
 <Router>
   <Routes>
     <Route path='/' element={<Layout />}>
-      <Route path='/aboutus' element={<AboutUs />}/>
-      <Route path='/contact' element={<Contact />}/>
-      <Route path='/properties' element={<Properties />}/>
-      <Route path='/team' element={<Team />}/>
-      <Route path='/houses' element={<Houses />}/>
-      <Route path='/apartments' element={<Apartments />}/>
-      <Route path='/rooms' element={<Rooms />}/>
+    <Route index element={<Home />}/>
+      <Route path='aboutus' element={<AboutUs />}/>
+      <Route path='contact' element={<Contact />}/>
+      <Route path='properties' element={<Properties />}/>
+      <Route path='team' element={<Team />}/>
+      <Route path='houses' element={<Houses />}/>
+      <Route path='apartments' element={<Apartments />}/>
+      <Route path='rooms' element={<Rooms />}/>
       <Route path='*' element={<NotFound />} />
     </Route>
   </Routes>
