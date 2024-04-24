@@ -10,8 +10,8 @@ function Contact() {
       <div>
         <BannerContact />
       </div>
-      <div className="container grid grid-cols-1 sm:grid-cols-2 m-4  ">
-        <div className="flex flex-col gap-4 m-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center ">
+        <div className="flex flex-col gap-4 mt-2 ">
           <h2 className="uppercase text-2xl ">Get In Touch</h2>
           <div className="text-bold text-4xl">House Agency 101 </div>
 
@@ -50,10 +50,13 @@ function Contact() {
       </div>
       <div className="flex flex-col">
         <h2 className="text-gray-500 text-2xl text-center m-6">
-          Cann not find the answer to your question? Our Customer Service is at
+          Can not find the answer to your question? Our Customer Service is at
           your disposal:
         </h2>
         <div className="max-w-[600px] justify-center mx-auto">
+          <span className="text-xs text-gray-500">
+            Please complete the form below.
+          </span>
           <input
             type="text"
             placeholder="Name"
@@ -73,6 +76,11 @@ function Contact() {
             className="w-full p-2  px-2 py-1 mb-4 border rounded-md border-gray-300 dark:border-gray-500 dark:bg-gray-800"
             rows="10"
           />
+          <div className="flex items-center justify-center">
+            <button className=" bg-gray-700 text-white rounded-lg pl-6 pr-6 pt-4 pb-4 text-xl">
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     </div>
