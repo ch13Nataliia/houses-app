@@ -69,12 +69,12 @@ function Testimaonials() {
     <div className='pb-10'>
       <div className="container">
         {/* header */}
-        <div className="text-center mb-20 max-w-[400px] mx-auto">
+        <div className="text-center mt-6 mb-10 max-w-[700px] mx-auto">
           <p className="text-xl bg-clip-text text-transparent bg-gradient-to-r from-orange-800 to-orange-200">
             What our clients sais
           </p>{' '}
-          <h2 className="text-3xl font-bold text-orange-800">Top Sale</h2>
-          <p className="text-sm text-gray-500">
+          <h2 className="text-3xl font-bold text-orange-800">Best Choice</h2>
+          <p className="text-md text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quam eligendi voluptatibus debitis harum provident quibusdam saepe
             aut optio reprehenderit, possimus numquam rem soluta eos dolorum

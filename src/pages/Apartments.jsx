@@ -1,7 +1,8 @@
 
+
 function Apartments() {
   return (
-    <div>Apartments</div>
+    <div></div>
   )
 }
 
