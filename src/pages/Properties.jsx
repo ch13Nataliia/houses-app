@@ -1,14 +1,16 @@
 // import React from 'react'
+
 import Img1 from '../assets/housesImg/one.webp';
 import Img2 from '../assets/housesImg/secondHouse1.webp';
 import Img3 from '../assets/housesImg/thirdHouse1.webp';
 import Img4 from '../assets/housesImg/FoursHouse1.webp';
 import Img5 from '../assets/housesImg/fiveHouse1.webp';
 import Img6 from '../assets/housesImg/sixHouse1.webp';
+import Img7 from '../assets/housesImg/secondHouse1.webp';
 
 import BannerProp from '../assets/2.png';
 
-import TravelImage from '../assets/travelbox.png';
+// import TravelImage from '../assets/travelbox.png';
 import { FaCircleQuestion } from "react-icons/fa6";
 import { MdBedroomParent } from "react-icons/md";
 import { FaHouseUser } from "react-icons/fa";
@@ -127,15 +129,16 @@ function Properties() {
         <div className="min-h-[550px]">
       <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0">
         <div className="container sm:mt-10">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 items-center">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  sm:gap-6 items-center">
             {/* Image section */}
             <div data-aos="flip-up">
-              <img
+            <img src={Img7} width='100%' height='450px'  alt='imageProp' className=" w-full mx-auto"/>
+              {/* <img
               data-aos='flip-up'
                 src={TravelImage}
                 alt="image"
                 className="max-w-[450px] sm:h-[250px]  md:h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
-              />
+              /> */}
             </div>
             {/* Text content section */}
             <div>
