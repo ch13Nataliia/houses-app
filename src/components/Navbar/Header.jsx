@@ -1,12 +1,17 @@
 // import React from 'react'
+import { useState } from 'react';
 import { FaCaretDown } from 'react-icons/fa';
 import { GiSpookyHouse } from 'react-icons/gi';
+import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
+
+import ResponsiveNavbar from './ResponsiveNavbar';
 
 const Menu = [
-  {id: 1, name: 'Home', link: '/'},
+  { id: 1, name: 'Home', link: '/' },
   { id: 2, name: 'About', link: '/aboutus' },
   { id: 3, name: 'Team', link: '/team' },
   { id: 4, name: 'Contact', link: '/contact' },
+  { id: 5, name: 'Best Choice', link: '/bestchoice' },
 ];
 const DropLinks = [
   { id: 1, name: 'Houses', link: '/houses' },
@@ -14,12 +19,16 @@ const DropLinks = [
   { id: 3, name: 'Rooms', link: '/rooms' },
 ];
 function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <div className="shadow-md bg-orange-50 ">
         <div className="container py-3 sm:py-0 flex flex-row justify-between">
           <div className="flex items-center justify-between">
-            <a href="/aboutus">
+            <a href="/">
               <GiSpookyHouse className="text-4xl" />
             </a>
           </div>
@@ -58,8 +67,26 @@ function Header() {
               </li>
             </ul>
           </div>
+          <div className="flex items-center gap-4">
+            <div className="md:hidden block">
+              {showMenu ? (
+                <HiMenuAlt1
+                  onClick={toggleMenu}
+                  className=" cursor-pointer transition-all"
+                  size={30}
+                />
+              ) : (
+                <HiMenuAlt3
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              )}
+            </div>
+          </div>
         </div>
       </div>
+      <ResponsiveNavbar setShowMenu={setShowMenu} showMenu={showMenu} />
     </>
   );
 }
