@@ -14,8 +14,7 @@ const Menu = [
 ];
 const DropLinks = [
   { id: 1, name: 'Houses', link: '/houses' },
-  { id: 2, name: 'Apartments', link: '/apartments' },
-  { id: 3, name: 'Rooms', link: '/rooms' },
+  { id: 2, name: 'Rooms', link: '/rooms' },
 ];
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
