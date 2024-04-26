@@ -11,7 +11,6 @@ const Menu = [
   { id: 2, name: 'About', link: '/aboutus' },
   { id: 3, name: 'Team', link: '/team' },
   { id: 4, name: 'Contact', link: '/contact' },
-  { id: 5, name: 'Best Choice', link: '/bestchoice' },
 ];
 const DropLinks = [
   { id: 1, name: 'Houses', link: '/houses' },

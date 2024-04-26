@@ -6,13 +6,9 @@ const Menu = [
   { id: 2, name: 'About', link: '/aboutus' },
   { id: 3, name: 'Team', link: '/team' },
   { id: 4, name: 'Contact', link: '/contact' },
-  { id: 5, name: 'Best Choice', link: '/bestchoice' },
+
 ];
-const DropLinks = [
-  { id: 1, name: 'Houses', link: '/houses' },
-  { id: 2, name: 'Apartments', link: '/apartments' },
-  { id: 3, name: 'Rooms', link: '/rooms' },
-];
+
 // eslint-disable-next-line react/prop-types
 function ResponsiveNavbar({ showMenu, setShowMenu }) {
   return (
@@ -39,20 +35,7 @@ function ResponsiveNavbar({ showMenu, setShowMenu }) {
         </nav>
       </div>
 
-      <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-lg bg-white p-2 text-black group-hover:block shadow-md">
-        <ul className="space-y-3">
-          {DropLinks.map((data) => (
-            <li key={data.id}>
-              <a
-                href={data.link}
-                className="inline-block w-full rounded-lg p-2 hover:bg-primary/10"
-              >
-                {data.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      
     </div>
   );
 }

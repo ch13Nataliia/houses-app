@@ -81,7 +81,7 @@ function Properties() {
     <>
     <div data-aos="zoom-in" style={bgImage}><img src={BannerProp} alt="" /></div>
       <div className="py-10">
-        <div className="container">
+        <div className="container " >
           {/* header */}
           <div
            data-aos="zoom-in"
@@ -126,15 +126,15 @@ function Properties() {
         </div>
         <div className="min-h-[550px]">
       <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0">
-        <div className="container">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+        <div className="container sm:mt-10">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 items-center">
             {/* Image section */}
             <div data-aos="flip-up">
               <img
               data-aos='flip-up'
                 src={TravelImage}
                 alt="image"
-                className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
+                className="max-w-[450px] sm:h-[250px]  md:h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
               />
             </div>
             {/* Text content section */}

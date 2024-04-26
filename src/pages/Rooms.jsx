@@ -4,7 +4,7 @@ import Testimaonials from '../components/Testimonials/Testimaonials';
 function Rooms() {
   return (
     <>
-      <div>
+      <div data-aos="zoom-in">
         <BannerRooms />
       </div>
       <div className="container">
@@ -19,7 +19,9 @@ function Rooms() {
           recusandae, nemo, dicta voluptatibus inventore, quia iure!
         </p>
       </div>
-      <div className="container grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div 
+      data-aos="flip-up"
+      className="container grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <div className="shadow-md m-2 p-2">One</div>
         <div className="shadow-md m-2 p-2">Two</div>
         <div className="shadow-md m-2 p-2">Tree</div>

@@ -79,7 +79,9 @@ function Houses() {
             deleniti?
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
+        <div 
+        data-aos="flip-left"
+        className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
             {HousesData.map((house) => (
               <>
                 <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  ">
