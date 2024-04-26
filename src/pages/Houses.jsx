@@ -62,7 +62,7 @@ const HousesData = [
 function Houses() {
   return (
     <>
-      <div data-aos="zoom-in" data-aos-duration="300">
+      <div data-aos="zoom-in" >
         <BannerHouse />
       </div>
       <div className="py-10">
@@ -80,7 +80,7 @@ function Houses() {
           </p>
         </div>
         <div 
-        data-aos="flip-left"
+        data-aos="zoom-out"
         className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
             {HousesData.map((house) => (
               <>
