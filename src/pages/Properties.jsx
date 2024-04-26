@@ -8,6 +8,15 @@ import Img6 from '../assets/housesImg/sixHouse1.webp';
 
 import BannerProp from '../assets/2.png';
 
+import TravelImage from '../assets/travelbox.png';
+import { FaCircleQuestion } from "react-icons/fa6";
+import { MdBedroomParent } from "react-icons/md";
+import { FaHouseUser } from "react-icons/fa";
+import { MdApartment } from "react-icons/md";
+
+
+
+
 const bgImage = {
   backgroundImage: `url(${BannerProp})`,
   backgroundPosition: 'center',
@@ -111,6 +120,63 @@ function Properties() {
             ))}
           </div>
         </div>
+        <div className="min-h-[550px]">
+      <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0">
+        <div className="container">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+            {/* Image section */}
+            <div data-aos="flip-up">
+              <img
+              data-aos='flip-up'
+                src={TravelImage}
+                alt="image"
+                className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
+              />
+            </div>
+            {/* Text content section */}
+            <div>
+              <h1 data-aos="fade-up" className="text-3xl font-bold sm:text-4xl">
+              Make the right choice with us
+              </h1>
+              <p className="text-sm text-gray-500 tracking-wide leading-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Excepturi nobis, eaque esse a vero quo eos nihil error magnam
+                expedita repellat architecto voluptas quidem modi laborum quas
+                quia! Labore, molestias. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Temporibus enim itaque, odio ut, recusandae
+                fugiat laborum nobis, repellendus sed ullam nesciunt delectus
+                earum aliquid mollitia maiores provident harum exercitationem
+                cum.
+              </p>
+              <div data-aos = 'zoom-in' className='grid grid-cols-2 gap-6 '>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <FaHouseUser className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100" />
+                    <p>Houses</p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <MdBedroomParent  className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100" />
+                    <p>Rooms</p>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <MdApartment  className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-100" />
+                    <p>Apartments</p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <FaCircleQuestion   className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100" />
+                    <p>Foods</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
     </>
   );

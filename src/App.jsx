@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import AboutUs from './pages/AboutUs';
@@ -9,11 +10,22 @@ import Houses from './pages/Houses';
 import Apartments from './pages/Apartments';
 import Rooms from './pages/Rooms';
 import Home from './pages/Home';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React from 'react';
 
 
 
 function App() {
+  React.useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 900,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
   return (
 <Router>
   <Routes>

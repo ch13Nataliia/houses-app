@@ -66,7 +66,7 @@ function Contact() {
               rows="10"
             />
             <div className="flex items-center justify-center">
-              <button className=" bg-gray-700 text-white rounded-lg pl-6 pr-6 pt-4 pb-4 text-xl">
+              <button className=" bg-gray-700 text-white rounded-lg pl-6 pr-6 pt-2 pb-2 text-xl">
                 Submit
               </button>
             </div>
