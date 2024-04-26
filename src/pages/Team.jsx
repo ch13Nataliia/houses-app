@@ -64,7 +64,9 @@ const bgImage = {
 function Team() {
   return (
     <>
-      <div style={bgImage}>
+      <div 
+       data-aos="zoom-in"
+       style={bgImage}>
         <img src={BannerTeam} alt="" />
       </div>
       <div>
@@ -73,7 +75,9 @@ function Team() {
         </h1>
       </div>
       <div className="bg-orange-50/50 m-6">
-        <div className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center p-4">
+        <div
+         data-aos="zoom-out"
+         className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center p-4">
           {TeamData.map((data) => (
             <>
               <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[350px] p-4">

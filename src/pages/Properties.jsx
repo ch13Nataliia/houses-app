@@ -79,11 +79,13 @@ function Properties() {
 
   return (
     <>
-    <div style={bgImage}><img src={BannerProp} alt="" /></div>
+    <div data-aos="zoom-in" style={bgImage}><img src={BannerProp} alt="" /></div>
       <div className="py-10">
         <div className="container">
           {/* header */}
-          <div className="text-center mb-20 max-w-[400px] mx-auto">
+          <div
+           data-aos="zoom-in"
+           className="text-center mb-20 max-w-[400px] mx-auto">
             <h1 className="text-3xl">Properties for Rent</h1>
             <p className="text-xs text-gray-500 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -96,7 +98,9 @@ function Properties() {
               alias nisi ea deleniti?
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
+          <div 
+          data-aos="fade-up"  
+          className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
             {ServisesData.map((data) => (
               <>
                 <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  ">
