@@ -59,7 +59,7 @@ const RoomData = [
 function Rooms() {
   return (
     <>
-      <div data-aos="zoom-in">
+      <div data-aos="zoom-in" data-aos-duration="300">
         <BannerRooms />
       </div>
       <div

@@ -62,7 +62,7 @@ const HousesData = [
 function Houses() {
   return (
     <>
-      <div>
+      <div data-aos="zoom-in" data-aos-duration="300">
         <BannerHouse />
       </div>
       <div className="py-10">
