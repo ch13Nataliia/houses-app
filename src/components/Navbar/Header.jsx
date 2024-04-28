@@ -24,18 +24,22 @@ function Header() {
   return (
     <>
       <div className="shadow-md bg-orange-50 ">
-        <div className="container py-3 sm:py-0 flex flex-row justify-between">
-          <div className="flex items-center justify-between">
-            <a href="/">
+        <div className="container py-3 sm:py-0 flex flex-row justify-between ">
+
+          <div className="flex items-center justify-between border-8">
+          <div>
+               <a href="/">
               <GiSpookyHouse className="text-4xl" />
             </a>
           </div>
+         
+          </div>
           {/* menucsection */}
-          <div className="flex items-center justify-between gap-4 font-semibold">
+          <div className="flex items-center justify-between gap-4 font-semibold text-xl">
             <ul className="hidden sm:flex items-center gap-4">
               {Menu.map((menu) => (
-                <li key={menu.id}>
-                  <a href={menu.link}>{menu.name}</a>
+                <li key={menu.id} >
+                  <a href={menu.link} className='inline-block py-4 px-4 hover:text-primary duration-200'>{menu.name}</a>
                 </li>
               ))}
               <li className="group relative cursor-pointer">

@@ -74,7 +74,7 @@ function Testimaonials() {
             What our clients sais
           </p>{' '}
           <h2 className="text-3xl font-bold text-orange-800">Best Choice</h2>
-          <p className="text-md text-gray-500">
+          <p className="lg:text-2xl sm:text-xl  text-gray-500">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
             quam eligendi voluptatibus debitis harum provident quibusdam saepe
             aut optio reprehenderit, possimus numquam rem soluta eos dolorum

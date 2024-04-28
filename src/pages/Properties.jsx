@@ -86,8 +86,8 @@ function Properties() {
             data-aos="zoom-in"
             className="text-center mb-20 max-w-[800px] mx-auto"
           >
-            <h1 className="text-5xl font-bold p-6">Properties for Sale</h1>
-            <p className="lg:text-3xl sm:text-xl text-gray-500 ">
+            <h1 className="text-4xl font-bold p-6">Properties for Sale</h1>
+            <p className="lg:text-2xl text-gray-500 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               eligendi rerum dolore et soluta! Voluptates laudantium, quo
               pariatur veritatis explicabo, debitis cupiditate aperiam, in
@@ -111,7 +111,7 @@ function Properties() {
                   <img src={data.img} alt="photos" />
                 </div>
                 <div className=" text-center p-4 ">
-                  <h2 className="text-2xl font-bold uppercase">{data.title}</h2>
+                  <h2 className="text-2xl font-bold uppercase p-4">{data.title}</h2>
                   <p>{data.description}</p>
                   <button
                     onClick={() => {}}
@@ -160,22 +160,22 @@ function Properties() {
                     <div className="space-y-6">
                       <div className="flex items-center gap-4">
                         <FaHouseUser className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100" />
-                        <p>Houses</p>
+                        <a href='/properties'>Houses</a>
                       </div>
                       <div className="flex items-center gap-4">
                         <MdBedroomParent className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100" />
-                        <p>Rooms</p>
+                        <a href='/rooms'>Rooms</a>
                       </div>
                     </div>
 
                     <div className="space-y-6">
                       <div className="flex items-center gap-4">
                         <MdApartment className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-100" />
-                        <p>Apartments</p>
+                        <a href='/team'>Team</a>
                       </div>
                       <div className="flex items-center gap-4">
                         <FaCircleQuestion className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100" />
-                        <p>Foods</p>
+                        <a href='/contact'>Questions</a>
                       </div>
                     </div>
                   </div>

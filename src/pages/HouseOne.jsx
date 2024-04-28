@@ -1,13 +1,15 @@
 import Img1 from '../assets/housesImg/house1.jpg';
+import Img2 from '../assets/housesImg/houseOne/houseOne1.jpg';
+import Img3 from '../assets/housesImg/houseOne/houseOne2.jpg';
+import Img4 from '../assets/housesImg/houseOne/houseOne4.jpg';
 
 function HouseOne() {
-
   return (
     <div className=" mb-4 container ">
       {/* title section */}
 
       <div className="flex flex-col gap-4 mt-6 mb-4">
-        <h1 className="text-5xl font-bold">Title of the House One</h1>
+        <h1 className="text-4xl font-bold">Title of the House One</h1>
         <div className="flex gap-4 ">
           <button className="bg-gray-500 text-white w-fil p-4 text-2xl font-bold">
             For Sale
@@ -30,26 +32,26 @@ function HouseOne() {
                 <img src={Img1} alt="" width="full" height="30%" />
               </li>
               <li>
-                <img src={Img1} alt="" width="full" height="20%" />
+                <img src={Img2} alt="" width="full" height="20%" />
               </li>
               <li>
-                <img src={Img1} alt="" width="full" height="20%" />
+                <img src={Img3} alt="" width="full" height="20%" />
               </li>
               <li>
-                <img src={Img1} alt="" width="full" height="20%" />
+                <img src={Img4} alt="" width="full" height="20%" />
               </li>
             </ul>
           </div>
 
           <div className="mt-20" id="tab_menu">
             <div className="flex gap-2 w-fit" id="tabs_titles">
-              <div className=" bg-orange-100/50 font-bold lg:text-3xl sm:text-2xl p-4 cursor-pointer ">
+              <div className=" bg-orange-100/50 font-bold lg:text-2xl sm:text-xl p-4 cursor-pointer ">
                 Full Details
               </div>
-              <div className=" bg-orange-400 text-white  font-bold lg:text-3xl sm:text-2xl p-4 cursor-pointer">
+              <div className=" bg-orange-400 text-white  font-bold lg:text-2xl sm:text-xl p-4 cursor-pointer">
                 Floor Plans
               </div>
-              <div className=" bg-orange-400 text-white font-bold lg:text-3xl sm:text-2xl p-4 cursor-pointer">
+              <div className=" bg-orange-400 text-white font-bold lg:text-2xl sm:text-xl p-4 cursor-pointer">
                 Area Map
               </div>
             </div>
@@ -58,28 +60,28 @@ function HouseOne() {
               className="flex flex-col gap-2 p-4 bg-orange-100/50 "
               id="tab_content"
             >
-              <p className="text-2xl leading-10">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Mollitia, nobis? Inventore architecto earum omnis nam, veniam
-                aliquid voluptates debitis necessitatibus sapiente nostrum
-                voluptate pariatur non nisi laboriosam explicabo modi neque.
+              <p className="lg:text-xl sm:text-lg leading-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                provident accusamus iste consectetur perferendis soluta quis a
+                facere accusantium dolores reiciendis inventore ipsa enim, fugit
+                culpa et exercitationem tempore voluptatibus!
               </p>
               <h2 className="text-2xl font-bold">Location</h2>
-              <p className="text-2xl leading-10">
+              <p className="lg:text-xl sm:text-lg leading-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
                 provident accusamus iste consectetur perferendis soluta quis a
                 facere accusantium dolores reiciendis inventore ipsa enim, fugit
                 culpa et exercitationem tempore voluptatibus!
               </p>
               <h2 className="text-2xl font-bold">Ground Floor</h2>
-              <p className="text-2xl leading-10">
+              <p className="lg:text-xl sm:text-lgleading-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
                 provident accusamus iste consectetur perferendis soluta quis a
                 facere accusantium dolores reiciendis inventore ipsa enim, fugit
                 culpa et exercitationem tempore voluptatibus!
               </p>
               <h2 className="text-2xl font-bold">First Floor</h2>
-              <p className="text-2xl leading-10">
+              <p className="lg:text-xl sm:text-lg leading-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
                 provident accusamus iste consectetur perferendis soluta quis a
                 facere accusantium dolores reiciendis inventore ipsa enim, fugit
@@ -90,7 +92,7 @@ function HouseOne() {
                 veniam, quas nam nostrum.
               </p>
               <h2 className="text-2xl font-bold">Externally</h2>
-              <p className="text-2xl leading-10">
+              <p className="lg:text-xl sm:text-lg leading-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
                 provident accusamus iste consectetur perferendis soluta quis a
                 facere accusantium dolores reiciendis inventore ipsa enim, fugit
@@ -104,22 +106,22 @@ function HouseOne() {
           </div>
         </div>
 
-        <div className=" flex flex-col gap-4 leading-loose text-2xl ">
-          <div className="bg-orange-100/50 p-4">
-            <h2 className="lg:text-4xl sm:text-3xl lg:text-left sm:text-center font-bold mt-4 mb-4">
+        <div className=" flex flex-col gap-4  ">
+          <div className="bg-orange-100/50 p-2">
+            <h2 className="uppercase sm:text-xl lg:text-left sm:text-center  font-bold mt-2 mb-4">
               Summary:
             </h2>
-            <ul>
+            <ul className="lg:text-xl sm:text-lg lg:leading-loose md:leading-10 flex flex-col gap-2">
               <li>Ref: 3292</li>
               <li>Type: Farm House</li>
               <li>Availability: For Sale</li>
               <li>Bedrooms: 5</li>
               <li>Bathrooms: 2</li>
             </ul>
-            <h2 className="lg:text-4xl  sm:text-3xl lg:text-left sm:text-center  font-bold mt-4 mb-4">
+            <h2 className="uppercase sm:text-lg lg:text-left sm:text-center  font-bold mt-4 mb-4">
               Property Features:
             </h2>
-            <div className="text-2xl lg:leading-loose md:leading-10	 	">
+            <div className="lg:text-xl sm:text-lg lg:leading-loose md:leading-10	 	">
               <li>
                 Imposing and attractive, stone built five bedroom detached
                 farmhouse
@@ -140,9 +142,9 @@ function HouseOne() {
             </div>
           </div>
 
-          <div className=" flex flex-col text-2xl font-bold bg-gray-300/50 p-4 gap-4 sm:text-center ">
+          <div className=" flex flex-col lg:text-xl sm:text-lg font-bold bg-gray-300/50 p-4 gap-4 sm:text-center ">
             <h2>Are you interested in this property?</h2>
-            <p className="text-orange-800 text-4xl">0123 456 789</p>
+            <p className="text-orange-800 text-2xl">0123 456 789</p>
           </div>
           <div className="flex flex-col gap-4 mt-4">
             <div className="bg-lime-700/50 text-white text-center font-bold p-4 cursor-pointer">

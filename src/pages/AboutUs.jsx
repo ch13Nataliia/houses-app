@@ -20,7 +20,7 @@ function AboutUs() {
           <div className="opacity-70">
             <img src={Img1} alt="" className="rounded-md" />
           </div>
-          <div className="text-xl justify-center text-center">
+          <div className="lg:text-2xl sm:text-xl  justify-center text-center">
             <p className="my-8 text-gray-500">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
               itaque molestiae deserunt illo facere expedita culpa neque
