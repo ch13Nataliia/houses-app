@@ -84,10 +84,10 @@ function Properties() {
           {/* header */}
           <div
             data-aos="zoom-in"
-            className="text-center mb-20 max-w-[400px] mx-auto"
+            className="text-center mb-20 max-w-[800px] mx-auto"
           >
-            <h1 className="text-3xl">Properties for Rent</h1>
-            <p className="text-xs text-gray-500 ">
+            <h1 className="text-5xl font-bold p-6">Properties for Sale</h1>
+            <p className="lg:text-3xl sm:text-xl text-gray-500 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               eligendi rerum dolore et soluta! Voluptates laudantium, quo
               pariatur veritatis explicabo, debitis cupiditate aperiam, in
