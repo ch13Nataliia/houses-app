@@ -7,12 +7,12 @@ import Properties from './pages/Properties';
 import Team from './pages/Team';
 import NotFound from './pages/NotFound';
 import Houses from './pages/Houses';
-import Apartments from './pages/Apartments';
 import Rooms from './pages/Rooms';
 import Home from './pages/Home';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from 'react';
+import HouseOne from './pages/HouseOne';
 
 
 
@@ -36,7 +36,7 @@ function App() {
       <Route path='properties' element={<Properties />}/>
       <Route path='team' element={<Team />}/>
       <Route path='houses' element={<Houses />}/>
-      <Route path='apartments' element={<Apartments />}/>
+      <Route path='houseone' element={<HouseOne />}/>
       <Route path='rooms' element={<Rooms />}/>
       <Route path='*' element={<NotFound />} />
     </Route>

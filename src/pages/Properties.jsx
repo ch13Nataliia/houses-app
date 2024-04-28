@@ -7,17 +7,13 @@ import Img4 from '../assets/housesImg/FoursHouse1.webp';
 import Img5 from '../assets/housesImg/fiveHouse1.webp';
 import Img6 from '../assets/housesImg/sixHouse1.webp';
 import Img7 from '../assets/housesImg/secondHouse1.webp';
-
 import BannerProp from '../assets/2.png';
 
 // import TravelImage from '../assets/travelbox.png';
-import { FaCircleQuestion } from "react-icons/fa6";
-import { MdBedroomParent } from "react-icons/md";
-import { FaHouseUser } from "react-icons/fa";
-import { MdApartment } from "react-icons/md";
-
-
-
+import { FaCircleQuestion } from 'react-icons/fa6';
+import { MdBedroomParent } from 'react-icons/md';
+import { FaHouseUser } from 'react-icons/fa';
+import { MdApartment } from 'react-icons/md';
 
 const bgImage = {
   backgroundImage: `url(${BannerProp})`,
@@ -31,7 +27,7 @@ function Properties() {
     {
       id: 1,
       title: 'House One',
-      link: '/',
+      link: '/houseone',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero doloribus cumque illum quasi ut amet quas sed voluptates minus non ratione impedit doloremque vel ipsa, totam aperiam at odit! ',
       img: Img1,
@@ -78,16 +74,18 @@ function Properties() {
     },
   ];
 
-
   return (
     <>
-    <div data-aos="zoom-in" style={bgImage}><img src={BannerProp} alt="" /></div>
+      <div data-aos="zoom-in" style={bgImage}>
+        <img src={BannerProp} alt="" />
+      </div>
       <div className="py-10">
-        <div className="container " >
+        <div className="container ">
           {/* header */}
           <div
-           data-aos="zoom-in"
-           className="text-center mb-20 max-w-[400px] mx-auto">
+            data-aos="zoom-in"
+            className="text-center mb-20 max-w-[400px] mx-auto"
+          >
             <h1 className="text-3xl">Properties for Rent</h1>
             <p className="text-xs text-gray-500 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -100,90 +98,92 @@ function Properties() {
               alias nisi ea deleniti?
             </p>
           </div>
-          <div 
-          data-aos="fade-up"  
-          className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center">
+          <div
+            data-aos="fade-up"
+            className="grid grid-cols-1 gap-8 sm:gap-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3 place-items-center"
+          >
             {ServisesData.map((data) => (
-              <>
-                <div className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  ">
-                  <div className="h-[250px]">
-                    <img src={data.img} alt="photos" />
-                  </div>
-                  <div className=" text-center p-4 ">
-                    <h2 className="text-2xl font-bold uppercase">
-                      {data.title}
-                    </h2>
-                    <p>{data.description}</p>
-                    <button
-                      onClick={() => {}}
-                      className="bg-orange-200/50 p-2 rounded-xl duration-200 hover:scale-105 m-4"
-                    >
-                      Book Now
-                    </button>
-                  </div>
+              <div
+                key={data.id}
+                className="rounded-2xl bg-white shadow-md hover:bg-orange-50/50 relative group max-w-[400px]  "
+              >
+                <div className="h-[250px]">
+                  <img src={data.img} alt="photos" />
                 </div>
-              </>
+                <div className=" text-center p-4 ">
+                  <h2 className="text-2xl font-bold uppercase">{data.title}</h2>
+                  <p>{data.description}</p>
+                  <button
+                    onClick={() => {}}
+                    className="bg-orange-200/50 p-2 rounded-xl duration-200 hover:scale-105 m-4"
+                  >
+                    <a href={data.link}> Book Now</a>
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
         <div className="min-h-[550px]">
-      <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0">
-        <div className="container sm:mt-10">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  sm:gap-6 items-center">
-            {/* Image section */}
-            <div data-aos="flip-up">
-            <img src={Img7} width='100%' height='450px'  alt='imageProp' className=" w-full mx-auto"/>
-              {/* <img
-              data-aos='flip-up'
-                src={TravelImage}
-                alt="image"
-                className="max-w-[450px] sm:h-[250px]  md:h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
-              /> */}
-            </div>
-            {/* Text content section */}
-            <div>
-              <h1 data-aos="fade-up" className="text-3xl font-bold sm:text-4xl">
-              Make the right choice with us
-              </h1>
-              <p className="text-sm text-gray-500 tracking-wide leading-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Excepturi nobis, eaque esse a vero quo eos nihil error magnam
-                expedita repellat architecto voluptas quidem modi laborum quas
-                quia! Labore, molestias. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Temporibus enim itaque, odio ut, recusandae
-                fugiat laborum nobis, repellendus sed ullam nesciunt delectus
-                earum aliquid mollitia maiores provident harum exercitationem
-                cum.
-              </p>
-              <div data-aos = 'zoom-in' className='grid grid-cols-2 gap-6 '>
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <FaHouseUser className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100" />
-                    <p>Houses</p>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <MdBedroomParent  className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100" />
-                    <p>Rooms</p>
+          <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0">
+            <div className="container sm:mt-10">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  sm:gap-6 items-center">
+                {/* Image section */}
+                <div data-aos="flip-up">
+                  <img
+                    src={Img7}
+                    width="100%"
+                    height="450px"
+                    alt="imageProp"
+                    className=" w-full mx-auto"
+                  />
+                </div>
+                {/* Text content section */}
+                <div>
+                  <h1
+                    data-aos="fade-up"
+                    className="text-3xl font-bold sm:text-4xl"
+                  >
+                    Make the right choice with us
+                  </h1>
+                  <p className="text-sm text-gray-500 tracking-wide leading-8">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Excepturi nobis, eaque esse a vero quo eos nihil error
+                    magnam expedita repellat architecto voluptas quidem modi
+                    laborum quas quia! Labore, molestias. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Temporibus enim itaque,
+                    odio ut, recusandae fugiat laborum nobis, repellendus sed
+                    ullam nesciunt delectus earum aliquid mollitia maiores
+                    provident harum exercitationem cum.
+                  </p>
+                  <div data-aos="zoom-in" className="grid grid-cols-2 gap-6 ">
+                    <div className="space-y-6">
+                      <div className="flex items-center gap-4">
+                        <FaHouseUser className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100" />
+                        <p>Houses</p>
+                      </div>
+                      <div className="flex items-center gap-4">
+                        <MdBedroomParent className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-orange-100" />
+                        <p>Rooms</p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-6">
+                      <div className="flex items-center gap-4">
+                        <MdApartment className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-100" />
+                        <p>Apartments</p>
+                      </div>
+                      <div className="flex items-center gap-4">
+                        <FaCircleQuestion className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100" />
+                        <p>Foods</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <MdApartment  className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-green-100" />
-                    <p>Apartments</p>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <FaCircleQuestion   className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100" />
-                    <p>Foods</p>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
       </div>
     </>
   );
