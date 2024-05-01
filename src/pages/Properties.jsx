@@ -35,7 +35,7 @@ function Properties() {
     {
       id: 2,
       title: 'House Two',
-      link: '/#',
+      link: '/housetwo',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero doloribus cumque illum quasi ut amet quas sed voluptates minus non ratione impedit doloremque vel ipsa, totam aperiam at odit! ',
       img: Img2,
@@ -50,7 +50,7 @@ function Properties() {
     },
     {
       id: 4,
-      title: 'House Three',
+      title: 'House Four',
       link: '/#',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero doloribus cumque illum quasi ut amet quas sed voluptates minus non ratione impedit doloremque vel ipsa, totam aperiam at odit! ',
@@ -58,7 +58,7 @@ function Properties() {
     },
     {
       id: 5,
-      title: 'House Three',
+      title: 'House Five',
       link: '/#',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero doloribus cumque illum quasi ut amet quas sed voluptates minus non ratione impedit doloremque vel ipsa, totam aperiam at odit! ',
@@ -66,7 +66,7 @@ function Properties() {
     },
     {
       id: 6,
-      title: 'House Three',
+      title: 'House Six',
       link: '/#',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vero doloribus cumque illum quasi ut amet quas sed voluptates minus non ratione impedit doloremque vel ipsa, totam aperiam at odit! ',

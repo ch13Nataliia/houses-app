@@ -26,7 +26,7 @@ function Header() {
       <div className="shadow-md bg-orange-50 ">
         <div className="container py-3 sm:py-0 flex flex-row justify-between ">
 
-          <div className="flex items-center justify-between border-8">
+          <div className="flex items-center justify-between ">
           <div>
                <a href="/">
               <GiSpookyHouse className="text-4xl" />
@@ -35,7 +35,7 @@ function Header() {
          
           </div>
           {/* menucsection */}
-          <div className="flex items-center justify-between gap-4 font-semibold text-xl">
+          <div className="flex items-center justify-between gap-4 font-semibold text-lg">
             <ul className="hidden sm:flex items-center gap-4">
               {Menu.map((menu) => (
                 <li key={menu.id} >

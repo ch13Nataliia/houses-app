@@ -1,22 +1,23 @@
-import Img1 from '../assets/housesImg/house1.jpg';
-import Img2 from '../assets/housesImg/houseOne/houseOne1.jpg';
-import Img3 from '../assets/housesImg/houseOne/houseOne3.jpg';
-import Img4 from '../assets/housesImg/houseOne/houseOne4.jpg';
+import Img1 from '../assets/housesImg/house2.jpg';
+import Img2 from '../assets/housesImg/houseTwo/houseTwo2.jpg';
+import Img3 from '../assets/housesImg/houseTwo/houseTwo4.jpg';
+import Img4 from '../assets/housesImg/houseTwo/houseTwo6.jpg';
+import Img5 from '../assets/housesImg/houseTwo/houseTwo6.jpg';
 
-function HouseOne() {
+function HouseTwo() {
   return (
     <div className=" mb-4 container ">
       {/* title section */}
 
       <div className="flex flex-col gap-4 mt-6 mb-4">
-        <h1 className="text-4xl font-bold">Title of the House One</h1>
+        <h1 className="text-4xl font-bold">Title of the House Two</h1>
         <div className="flex gap-4 ">
           <button className="bg-gray-500 text-white w-fil p-4 text-xl font-bold">
             For Sale
           </button>
           <button className="bg-lime-600/70 text-white w-fil p-4 text-xl font-bold">
             {' '}
-            &pound;250,000
+            &pound;430,000
           </button>
         </div>
       </div>
@@ -29,7 +30,7 @@ function HouseOne() {
           <div className="mt-10">
             <ul className="flex gap-2 mt-2 mb-2">
               <li>
-                <img src={Img1} alt="" width="full" height="20%" />
+                <img src={Img5} alt="" width="full" height="20%" />
               </li>
               <li>
                 <img src={Img2} alt="" width="full" height="20%" />
@@ -112,7 +113,7 @@ function HouseOne() {
               Summary:
             </h2>
             <ul className="lg:text-xl sm:text-lg lg:leading-loose md:leading-10 flex flex-col gap-2">
-              <li>Ref: 3292</li>
+              <li>Ref: 2412</li>
               <li>Type: Farm House</li>
               <li>Availability: For Sale</li>
               <li>Bedrooms: 5</li>
@@ -163,4 +164,4 @@ function HouseOne() {
   );
 }
 
-export default HouseOne;
+export default HouseTwo;
